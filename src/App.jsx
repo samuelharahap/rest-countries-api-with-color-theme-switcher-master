@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { useState } from 'react'
 
 import useRequest from './utils/useRequest'
 import { Container } from './utils/styled'
@@ -9,8 +10,8 @@ import Country from './components/Country'
 const Countries = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 70px;
-  justify-content: center;
 `
 
 function App() {

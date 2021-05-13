@@ -4,6 +4,7 @@ const Wrapper = styled.div`
   box-shadow: 0 0 5px 3px rgb(0 0 0 / 10%);
   border-radius: 4px;
   overflow: hidden;
+  max-width: 255px;
 `
 
 const InfoWrapper = styled.div`
@@ -23,8 +24,8 @@ const Label = styled.span`
 const Flag = styled.img`
   display: block;
   object-fit: cover;
-  width: 250px;
-  height: 150px;
+  width: 255px;
+  height: 155px;
 `
 
 function Country({ name, population, region, capital, flag }) {
