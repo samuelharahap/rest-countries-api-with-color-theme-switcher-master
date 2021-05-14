@@ -1,20 +1,21 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  box-shadow: 0 0 5px 3px rgb(0 0 0 / 10%);
+  box-shadow: 0 0 5px 5px rgb(0 0 0 / 3%);
   border-radius: 4px;
   overflow: hidden;
-  max-width: 255px;
+  max-width: 265px;
 `
 
 const InfoWrapper = styled.div`
-  padding: 20px 20px 30px;
+  padding: 25px 24px 43px;
 `
 
 const Title = styled.h2`
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 800;
-  margin: 0 0 10px;
+  margin: 0 0 13px;
+  letter-spacing: -1.25px;
 `
 
 const Label = styled.span`
@@ -24,8 +25,8 @@ const Label = styled.span`
 const Flag = styled.img`
   display: block;
   object-fit: cover;
-  width: 255px;
-  height: 155px;
+  width: 265px;
+  height: 160px;
 `
 
 function Country({ name, population, region, capital, flag }) {
@@ -35,13 +36,13 @@ function Country({ name, population, region, capital, flag }) {
       <InfoWrapper>
         <Title>{name}</Title>
         <div>
-          <Label>Population:</Label> {population}
+          <Label>Population: </Label> {population}
         </div>
         <div>
-          <Label>Region:</Label> {region}
+          <Label>Region: </Label> {region}
         </div>
         <div>
-          <Label>Capital:</Label> {capital}
+          <Label>Capital: </Label> {capital}
         </div>
       </InfoWrapper>
     </Wrapper>

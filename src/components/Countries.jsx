@@ -10,8 +10,13 @@ const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 70px;
+  gap: 73px;
 `
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #000;
+`;
 
 function App() {
   const { data, error } = useRequest(
@@ -25,7 +30,7 @@ function App() {
     <Container>
       <Wrapper>
         {data.map((country, idx) => (
-          <Link key={`country-${idx}`} to="/detail">
+          <StyledLink key={`country-${idx}`} to="/detail">
             <Country
               name={country.name}
               population={country.population}
@@ -33,7 +38,7 @@ function App() {
               capital={country.capital}
               flag={country.flag}
             />
-          </Link>
+          </StyledLink>
         ))}
       </Wrapper>
     </Container>
