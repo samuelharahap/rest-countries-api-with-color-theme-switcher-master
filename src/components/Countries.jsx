@@ -20,7 +20,7 @@ const StyledLink = styled(Link)`
 
 function App() {
   const { data, error } = useRequest(
-    'all?fields=name;population;region;capital;flag'
+    'all?fields=name;population;region;capital;flag;alpha3Code'
   )
 
   if (error) return <h1>Something went wrong!</h1>
@@ -30,7 +30,7 @@ function App() {
     <Container>
       <Wrapper>
         {data.map((country, idx) => (
-          <StyledLink key={`country-${idx}`} to="/detail">
+          <StyledLink key={`country-${idx}`} to={`/${country.alpha3Code}`}>
             <Country
               name={country.name}
               population={country.population}

@@ -10,7 +10,7 @@ function App() {
       <main className="App">
         <Header />
         <Switch>
-          <Route path="/detail">
+          <Route path="/:countryCode">
             <Detail />
           </Route>
           <Route path="/">

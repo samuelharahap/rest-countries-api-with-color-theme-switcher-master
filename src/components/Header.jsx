@@ -5,7 +5,7 @@ import { Container } from '../utils/styled'
 const Wrapper = styled.div`
   box-shadow: 0 0 5px 2px rgb(0 0 0 / 6%);
   line-height: 76px;
-  margin-bottom: 152px;
+  margin-bottom: 40px;
   background-color: #fff;
 `
 
